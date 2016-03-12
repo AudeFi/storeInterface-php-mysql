@@ -1,0 +1,285 @@
+body {
+	background:#eee;
+	font-family:Helvetica,Arial;
+	font-size: 14px;
+	position: relative;
+	padding-top: 200px;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+::-webkit-scrollbar-track {
+    /* background: rgba(255,255,255,0.8);  */
+}
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(100,100,100,0.5);  
+}
+
+
+.header {
+	width: 100%;
+	height: 300px;
+	background-image: url(../medias/header.jpg);
+	background-size: cover;
+	position: absolute;
+	top:0;
+}
+
+.container {
+	z-index: 1;
+	width: 800px;
+	height: 1025px;
+	background-color: white;
+	margin: auto;
+	position: relative;
+	font-size: 0;
+	margin-bottom: 30px;
+}
+
+.column {
+	display: inline-block;
+	font-size: 12px;
+	padding: 25px;
+}
+
+.column1 {
+	width: 25%;
+	color: grey;
+}
+
+.column1 .title {
+	font-size: 16px;
+	margin: 40px 0 14px 0 ;
+}
+
+.column1 .details .moyenne span {
+	font-size: 25px;
+}
+
+.column2 {
+	width: 75%;
+	vertical-align: top;
+
+}
+
+.column1 .icon {
+	width: 150px;
+}
+
+.column1 .details {
+	width: 150px;
+}
+
+.column2 .title {
+	font-size: 20px;
+	margin: 18px 0;
+}
+
+.column .resume {
+	font-size: 14px;
+	margin-bottom: 40px;
+	text-align: justify;
+	color: grey;
+}
+
+.column2 .pics {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 35px;
+}
+
+.column2 .avis-users {
+	margin-bottom: 40px;
+}
+
+.column2 .avis-users .avis {
+	margin-top: 15px;
+	height: 250px;
+	overflow: scroll;
+}
+
+.column .avis .title {
+	font-size: 14px;
+	margin: 0;
+	margin-bottom: 5px;
+	color: grey;
+	font-weight: bold;
+}
+
+.column .avis-users .user {
+	margin-bottom: 25px;
+}
+
+.column .avis .name {
+	font-size: 13px;
+	margin-bottom: 10px;
+	color: grey;
+}
+
+.column .avis .title, .column .avis .note {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.column .comment, .column .name, .column .note {
+	font-size: 14px;
+	color: grey;
+}
+
+
+
+
+/* ----- FORM  ----- */ 
+
+
+.errors {
+	color: red;
+	margin-top: 17px;
+}
+
+.success {
+	color: green;
+	margin-top: 17px;
+}
+
+.container form {
+	width: 100%;
+	font-size: 14px;
+	color: grey;
+}
+
+.container form input{
+	padding: 3px;
+}
+
+.container form .column-form {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 10px;
+}
+
+.container form .text {
+	width: 170px;
+	border: 1px solid #ddd;
+	height: 25px;
+	margin-bottom: 10px;
+}
+
+.container form .text input {
+	height: 25px;
+}
+
+.container form textarea {
+	height: 100px;
+	width: 350px;
+	resize: none;
+}
+
+.container form .textarea {
+	width: 350px;
+	border: 1px solid #ddd;
+	height: 100px;
+	padding: 5px;
+}
+
+
+.container form .submit {
+	display: inline-block;
+	vertical-align: top;
+	height: 25px;
+	width: 100px;
+	background-color: #ddd;
+	border: 1px solid #ddd;
+	color: grey;
+	cursor: pointer;
+	float: right;
+	margin-top: 10px;
+	margin-right: 16px;
+}
+
+.container form .submit:hover {
+	background-color: white;
+}
+
+.container form .submit input {
+	height: 25px;
+	width: 100px;
+	text-align: center;
+}
+
+/* Notation */ 
+
+
+.input-star {
+	display: none;
+}
+
+.stars-vote {
+	width: 135px;
+	font-size: 25px;
+	overflow:hidden;
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.stars-vote a,
+    .stars-vote label {
+			float:right;
+			color: #aaa;
+			text-decoration: none;
+			-webkit-transition: color .4s;
+			-moz-transition: color .4s;
+			-o-transition: color .4s;
+			transition: color .4s;
+		}
+.stars-vote label:hover ~ label,
+.stars-vote input:focus ~ label,
+.stars-vote input:checked ~ label,
+.stars-vote label:hover,
+		.stars-vote a:hover,
+		.stars-vote a:hover ~ a,
+		.stars-vote a:focus,
+		.stars-vote a:focus ~ a	{
+			color: orange;
+			cursor: pointer;
+		}
+
+
+
+
+
+
+/* IMAGE POP UP */
+
+
+.image-source-link {
+	color: #98C3D1;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	/* ideally, transition speed should match zoom duration */
+	-webkit-transition: all 0.3s ease-out; 
+	-moz-transition: all 0.3s ease-out; 
+	-o-transition: all 0.3s ease-out; 
+	transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+		opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+		opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+	opacity: 0;
+}
