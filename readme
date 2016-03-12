@@ -1,0 +1,19 @@
+PHP and MySQL Test - 12/03/2015
+
+
+#DESCRIPTION
+App Store remake with the Netflix app where you can add your comment and your grade. This comment will be add to a data base and displayed on the interface. There will also be the average of all the grades. 
+
+
+#RESOURCES
+Netflix ressources (images, logo)
+App Store / Itunes design interface
+
+
+#INSTALATION
+Data base has to be created
+
+
+#AUTHOR
+Aude Ficheux
+ficheux.aude@gmail.com
